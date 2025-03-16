@@ -1,0 +1,30 @@
+# Ignora le cartelle di sistema
+Cookies/
+Dati applicazioni/
+Documenti/
+Documenti/Immagini/
+Documenti/Musica/
+Documenti/Video/
+Impostazioni locali/
+Menu Avvio/
+Modelli/
+Recenti/
+Risorse di rete/
+Risorse di stampa/
+SendTo/
+
+# Ignora file di configurazione specifici
+.bash_history
+.gitconfig
+.atom/
+.vscode/
+.idea/
+
+# Ignora file di sistema di Windows
+NTUSER.DAT
+NTUSER.DAT*TxR*
+*.regtrans-ms
+
+# Ignora file specifici di OneDrive
+OneDrive/
+Desktop/*.lnk
