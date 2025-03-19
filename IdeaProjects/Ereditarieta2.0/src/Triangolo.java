@@ -1,5 +1,5 @@
 // Classe Triangolo che estende Forma
-class Triangolo extends Forma {
+class Triangolo implements Forma {
     private double base;
     private double altezza;
 
