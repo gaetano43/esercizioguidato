@@ -11,8 +11,8 @@ class Triangolo extends Forma {
 
     // Override del metodo calcolaArea per calcolare l'area di un Triangolo
     @Override
-    public void calcolaArea() {
-        double risultato = (base * altezza)* 0.5;
-        System.out.println("L'area del triangolo è di " + risultato + " metri quadrati.");
+    public double calcolaArea() {
+       return  (base * altezza)* 0.5;
+
     }
 }

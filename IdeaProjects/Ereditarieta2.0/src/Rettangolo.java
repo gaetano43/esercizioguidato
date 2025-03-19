@@ -1,18 +1,17 @@
 // Classe Rettangolo che estende Forma
 class Rettangolo extends Forma {
-    private int base;
-    private int altezza;
+    private double base;
+    private double altezza;
 
     // Costruttore per inizializzare base e altezza
-    public Rettangolo(int base, int altezza) {
+    public Rettangolo(double base, double altezza) {
         this.base = base;
         this.altezza = altezza;
     }
 
     // Override del metodo calcolaArea per calcolare l'area di un rettangolo
     @Override
-    public void calcolaArea() {
-        int risultato = base * altezza;
-        System.out.println("L'area del rettangolo è di " + risultato + " metri quadrati.");
+    public double calcolaArea() {
+        return base * altezza;
     }
 }
