@@ -1,18 +1,24 @@
 package org.example;
-//Crea una classe Person con i campi firstName, lastName, age e address, i getter and i setter
-//Il costruttore accetterà un Builder in input
-//Creare una classe Builder che attraverso il costruttore e dei metodi specifici (tranne nome e cognome, gli altri campi sono opzionali) per costruire l'oggetto Person.
-//Creare due oggetti Person e stamparli a video
+/**
+ * Classe principale che crea oggetti Person usando PersonBuilder.
+ */
 public class Main {
+    /**
+     * Metodo principale di esecuzione.
+     * @param args Argomenti da linea di comando (non usati qui).
+     */
     public static void main(String[] args) {
+        // Creo la prima persona con tutti i campi
         Person person1 = new PersonBuilder("Mario", "Rossi")
                 .age(35)
-                .address("Via Garibaldi 5, Milano")
+                .address("Via Milano 1")
                 .build();
 
-        Person person2 = new PersonBuilder("Anna", "Bianchi")
-                .build(); // Nessuna info opzionale
+        // Creo una persona solo con nome e cognome
+        Person person2 = new PersonBuilder("Giulia", "Verdi")
+                .build();
 
+        // Stampo i dati delle persone
         System.out.println(person1);
         System.out.println(person2);
     }
